@@ -1,0 +1,87 @@
+@using System.Globalization
+    
+    @{
+        PersianCalendar persianCalender = new PersianCalendar();
+
+        var monthValue = persianCalender.GetMonth(DateTime.Now).ToString("D");
+        var dayValue = persianCalender.GetDayOfWeek(DateTime.Now).ToString("D");
+        string monthOfYear = String.Empty;
+        string dayOfWeek = String.Empty;
+        
+        switch (monthValue)
+        {
+            case "1":
+                monthOfYear = "فروردین";
+                break;  
+            case "2":
+                monthOfYear = "اردیبهشت";
+                break; 
+            case "3":
+                monthOfYear = "خرداد";
+                break; 
+            case "4":
+                monthOfYear = "تیر";
+                break; 
+            case "5":
+                monthOfYear = "مرداد";
+                break; 
+            case "6":
+                monthOfYear = "شهریور";
+                break; 
+            case "7":
+                monthOfYear = "مهر";
+                break; 
+            case "8":
+                monthOfYear = "آبان";
+                break; 
+            case "9":
+                monthOfYear = "آذر";
+                break; 
+            case "10":
+                monthOfYear = "دی";
+                break; 
+            case "11":
+                monthOfYear = "بهمن";
+                break; 
+            case "12":
+                monthOfYear = "اسفند";
+                break; 
+        }
+        
+        switch (dayValue)
+        {
+            case "1":
+                dayOfWeek = "شنبه";
+                break;  
+            case "2":
+                dayOfWeek = "یک شنبه";
+                break; 
+            case "3":
+                dayOfWeek = "دو شنبه";
+                break; 
+            case "4":
+                dayOfWeek = "سه شنبه";
+                break; 
+            case "5":
+                dayOfWeek = "چهار شنبه";
+                break; 
+            case "6":
+                dayOfWeek = "پنج شنبه";
+                break; 
+            case "7":
+                dayOfWeek = "جمعه";
+                break; 
+        }
+        
+        
+        string persianDate = persianCalender.GetYear(DateTime.Now) + " سال " +
+                             monthOfYear + " " +
+                             persianCalender.GetDayOfMonth(DateTime.Now).ToString("00")+" "+
+                             dayOfWeek + "امروز: ";
+        
+        var a = "امروز: " + dayOfWeek +" "+ persianCalender.GetDayOfMonth(DateTime.Now).ToString("00") 
+            + " " + monthOfYear +
+        " سال " + persianCalender.GetYear(DateTime.Now);
+    }
+    
+    <h2 style="padding: 30px; border:1px solid darkred">@a</h2>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #header{
+        height: 100px;
+        background-color: chartreuse;
+        }
+        #footer{
+        height: 120px;
+        background-color: #0077cc;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    @RenderSection("Header", required: false)
+</div>
+@RenderBody()
+<div id="footer">
+    @RenderSection("Footer")
+</div>
+</body>
+</html>
