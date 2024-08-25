@@ -1,0 +1,57 @@
+﻿@{
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/lg-comments.min.css">
+    <link rel="stylesheet" href="css/lg-fullscreen.min.css">
+    <link rel="stylesheet" href="css/lg-rotate.min.css">
+    <link rel="stylesheet" href="css/lg-thumbnail.min.css">
+    <link rel="stylesheet" href="css/lg-zoom.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+}
+<h1>LightGallery.js Example</h1>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#largeModal">
+    Open Large Modal
+</button>
+
+<div id="gallery">
+    <a href="image/2023_spofec_overdose_s_widebody_1_2560x1440.jpg" data-lg-size="1000-600"
+       data-lg-thumbnail="image/2023_spofec_overdose_s_widebody_1_2560x1440.jpg">
+        <img src="image/2023_spofec_overdose_s_widebody_1_2560x1440.jpg" title="Hello" style="width:250px; height: 150px">
+    </a>
+    <a href="image/2021_bmw_m3_2_1024x768.jpg" data-lg-size="1000-600"
+       data-lg-thumbnail="image/2021_bmw_m3_2_1024x768.jpg">
+        <img src="image/2021_bmw_m3_2_1024x768.jpg" title="Mello" style="width: 250px; height: 150px">
+    </a>
+    <a href="image/2021_bmw_m3_1_2560x1440.jpg" data-lg-size="1000-600"
+       data-lg-thumbnail="image/2021_bmw_m3_1_2560x1440.jpg">
+        <img src="image/2021_bmw_m3_1_2560x1440.jpg" title="Jello" style="width: 250px; height: 150px">
+    </a>
+</div>
+<p>This is a large modal.</p>
+
+
+@{
+    <script src="js/lightgallery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/lg-rotate.min.js"></script>
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-zoom.min.js"></script>
+}
+
+<script>
+        lightGallery(document.getElementById('gallery'), {
+            plugins: [lgThumbnail, lgZoom, lgFullscreen, lgRotate],
+            download: true,
+            controls: true,
+            allowMediaOverlap: true,
+            getCaptionFromTitleOrAlt: true,
+            slideEndAnimation: true,
+            toggleThumb: true, 
+            animateThumb: true,
+            thumbWidth: "150px",
+            thumbHeight: "100px"
+        });
+    </script>

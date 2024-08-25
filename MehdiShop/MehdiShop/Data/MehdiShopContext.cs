@@ -14,6 +14,7 @@ public class MehdiShopContext : DbContext
     public DbSet<CategoryToProduct> CategoryToProducts { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<Item> Items { get; set; }
+    public DbSet<User> User { get; set; }
     
     //Model Builder
     protected override void OnModelCreating(ModelBuilder modelBuilder)

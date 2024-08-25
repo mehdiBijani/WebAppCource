@@ -19,7 +19,12 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
     </ItemGroup>
-
-
+    
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\ClientResource.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ClientResource.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
 
 </Project>

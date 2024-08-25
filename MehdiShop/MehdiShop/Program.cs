@@ -1,4 +1,6 @@
 using MehdiShop.Data;
+using MehdiShop.Data.IRepositories;
+using MehdiShop.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,13 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MehdiShopContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+#region IoC
+
+builder.Services.AddScoped<IGroupRepository, GroupRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+#endregion
 
 var app = builder.Build();
 

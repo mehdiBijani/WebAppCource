@@ -26,15 +26,24 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContactUs">تماس با ما</a>
                     </li>
+                    <partial name="_Groups"/>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">ثبت نام</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
 <div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+    <div class="row">
+        <div class="col-md-3">
+            @await Component.InvokeAsync("ProductGroupsComponent")
+        </div>
+        <div class="col-md-9">
+            @RenderBody()
+        </div>
+    </div>
 </div>
 
 <footer class="border-top footer text-muted">

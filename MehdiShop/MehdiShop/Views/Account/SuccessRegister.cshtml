@@ -1,0 +1,15 @@
+@model RegisterViewModel
+
+@{
+    ViewBag.Title = "SuccessRegister";
+    Layout = "_Layout";
+}
+
+<h2>ثبت نام با موفقیت انجام شد</h2>
+
+<div class="alert alert-success">
+    کاربر عزیز با ایمیل '@Model.Email' ثبت نام شما با موفقیت انجام شد. شما می توانید از طریق لینک زیر وارد سایت شوید.
+</div>
+<p>
+    @* <a asp-action="Login" asp-controller="Account">ورود به سایت</a> *@
+</p>

@@ -1,0 +1,14 @@
+@using MehdiShop.Data.IRepositories
+@inject IGroupRepository GroupRepository;
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+    گروه ها
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" data-bs-popper="none">
+    @foreach (var item in GroupRepository.GetAllCategories())
+    {
+      <li><a class="dropdown-item" href="/Group/@item.Id/@item.Name ">@item.Name</a></li>
+    }
+  </ul>
+</li>
