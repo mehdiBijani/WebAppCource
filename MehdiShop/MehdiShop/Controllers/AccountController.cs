@@ -1,6 +1,9 @@
+using System.Security.Claims;
 using MehdiShop.Data.IRepositories;
 using MehdiShop.Models;
 using MehdiShop.Resources;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MehdiShop.Controllers;
@@ -13,6 +16,8 @@ public class AccountController: Controller
     {
         _userRepository = userRepository;
     }
+
+    #region Register
 
     public IActionResult Register()
     {
@@ -43,4 +48,63 @@ public class AccountController: Controller
         
         return View("SuccessRegister", model);
     }
+
+    #endregion
+
+    #region Login
+
+    public IActionResult Login()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Login(LoginViewModel model)
+    {
+        if (!ModelState.IsValid)
+            return View(model);
+
+        var user = _userRepository.GetUserForLogin(model.Email.ToLower(), model.Password);
+
+        if (user == null)
+        {
+            ModelState.AddModelError("Email", "اطلاعات صحیح نیست!");
+            return View(model);
+        }
+
+        #region Authentication
+
+        var claims = new List<Claim>
+        {
+            new(ClaimTypes.Name, user.Email),
+            new(ClaimTypes.NameIdentifier, user.UserId.ToString())
+        };
+
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+        var principal = new ClaimsPrincipal(identity);
+
+        var properties = new AuthenticationProperties
+        {
+            IsPersistent = model.RememberMe
+        };
+
+        HttpContext.SignInAsync(principal, properties);
+
+        #endregion
+        
+        return Redirect("/");
+    }
+    #endregion
+
+    #region Loguot
+
+    public IActionResult Logout()
+    {
+        HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+        return Redirect("/Account/Login");
+    }
+
+    #endregion
 }

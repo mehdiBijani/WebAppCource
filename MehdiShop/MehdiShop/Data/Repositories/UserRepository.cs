@@ -22,4 +22,9 @@ public class UserRepository : IUserRepository
         _context.Add(user);
         _context.SaveChanges();
     }
+
+    public User GetUserForLogin(string email, string password)
+    {
+        return _context.User.SingleOrDefault(x => x.Email == email && x.Password == password);
+    }
 }

@@ -24,3 +24,21 @@ public class RegisterViewModel
     [Display(Name = "تکرار کلمه عبور")]
     public string RePassword { get; set; }
 }
+
+public class LoginViewModel
+{
+    [Required(ErrorMessageResourceName = "Validation_InputIsRequired", ErrorMessageResourceType = typeof(ClientResource))]
+    [MaxLength(200)]
+    [EmailAddress(ErrorMessageResourceName = "Validation_InputIsNotValid", ErrorMessageResourceType = typeof(ClientResource))]
+    [Display(Name = "ایمیل")]
+    public string Email { get; set; }
+    
+    [Required(ErrorMessageResourceName = "Validation_InputIsRequired", ErrorMessageResourceType = typeof(ClientResource))]
+    [MaxLength(50)]
+    [DataType(DataType.Password)]
+    [Display(Name = "کلمه عبور")]
+    public string Password { get; set; }
+    
+    [Display(Name = "مرا به خاطر بسپار")]
+    public bool RememberMe { get; set; }
+}
