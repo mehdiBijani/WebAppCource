@@ -15,6 +15,8 @@ public class MehdiShopContext : DbContext
     public DbSet<Product> Products { get; set; }
     public DbSet<Item> Items { get; set; }
     public DbSet<User> User { get; set; }
+    public DbSet<Order> Order { get; set; }
+    public DbSet<OrderDetail> OrderDetail { get; set; }
     
     //Model Builder
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -5,7 +5,7 @@ namespace MehdiShop.Models;
 public class User
 {
     [Key]
-    public int UserId { get; set; }
+    public int Id { get; set; }
     
     [Required]
     [MaxLength(200)]
@@ -19,4 +19,10 @@ public class User
     public DateTime RegisterDate { get; set; }
     
     public bool IsAdmin { get; set; }
+
+    #region Navigation Property
+
+    public List<Order> Orders { get; set; }
+
+    #endregion
 }
