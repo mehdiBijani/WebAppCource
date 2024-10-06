@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\MehdiShop.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\css\\bootstrap-dataTable.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-dataTable.css"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.css"
+    },
+    {
       "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -23,6 +35,34 @@
     {
       "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\images\\4.jpg",
       "PackagePath": "staticwebassets\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\js\\bootstrap-dataTables.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap-dataTables.js"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\js\\fontawesome.js"
+    },
+    {
+      "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\js\\jquery-dataTables.js",
+      "PackagePath": "staticwebassets\\js\\jquery-dataTables.js"
     },
     {
       "Id": "C:\\Users\\Mehdi\\RiderProjects\\MehdiShop\\MehdiShop\\wwwroot\\js\\site.js",

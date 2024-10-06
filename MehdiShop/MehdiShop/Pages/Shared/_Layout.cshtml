@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/admin.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.rtl.css"/>
+    <link rel="stylesheet" href="~/css/bootstrap-dataTable.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/fontawesome.css"/>
+
+</head>
+<body dir="rtl">
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/jquery-dataTables.js" asp-append-version="true"></script>
+<script src="~/js/bootstrap-dataTables.js" asp-append-version="true"></script>
+<script src="~/js/fontawesome.js"></script>
+<header>
+    <a href="/">Admin</a>
+</header>
+<div class="row d-flex">
+    <div class="col-md-2">
+        <nav>
+                <ul>
+                    <li>
+                        <a class="nav-item">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    </div>
+    <div class="col-md-10">
+        @RenderBody()
+    </div>
+</div>
+</body>
+</html>

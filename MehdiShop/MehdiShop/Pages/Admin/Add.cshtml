@@ -1,0 +1,44 @@
+@page
+@model MehdiShop.Pages.Admin.Add
+
+<h1 class="mb-3">افزودن محصول</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="UpdateProductViewModel.Id">
+    <div class="form-row">
+        <div class="form-group col-md-9 mb-2">
+            <label asp-for="UpdateProductViewModel.Name"></label>
+            <input asp-for="UpdateProductViewModel.Name" class="form-control">
+            <span asp-validation-for="UpdateProductViewModel.Name"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-9 mb-2">
+            <label asp-for="UpdateProductViewModel.Description"></label>
+            <textarea asp-for="UpdateProductViewModel.Description" class="form-control"></textarea>
+            <span asp-validation-for="UpdateProductViewModel.Description"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-9 mb-2">
+            <label asp-for="UpdateProductViewModel.Price"></label>
+            <input asp-for="UpdateProductViewModel.Price" class="form-control">
+            <span asp-validation-for="UpdateProductViewModel.Price"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-9 mb-2">
+            <label asp-for="UpdateProductViewModel.QuantityInStock"></label>
+            <input asp-for="UpdateProductViewModel.QuantityInStock" class="form-control">
+            <span asp-validation-for="UpdateProductViewModel.QuantityInStock"></span>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-9 mb-2">
+            <label asp-for="UpdateProductViewModel.Picture"></label>
+            <input asp-for="UpdateProductViewModel.Picture" class="form-control">
+            <span asp-validation-for="UpdateProductViewModel.Picture"></span>
+        </div>
+    </div>
+    <input type="submit" class="btn btn-success mt-5" value="ثبت">
+</form>
