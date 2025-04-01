@@ -1,0 +1,14 @@
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\bin\Debug\net7.0\Mediator.exe
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\bin\Debug\net7.0\Mediator.deps.json
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\bin\Debug\net7.0\Mediator.runtimeconfig.json
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\bin\Debug\net7.0\Mediator.dll
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\bin\Debug\net7.0\Mediator.pdb
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.AssemblyInfoInputs.cache
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.AssemblyInfo.cs
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.csproj.CoreCompileInputs.cache
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.dll
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\refint\Mediator.dll
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.pdb
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\Mediator.genruntimeconfig.cache
+C:\Users\Mehdi\RiderProjects\DesignPattern\Mediator\obj\Debug\net7.0\ref\Mediator.dll

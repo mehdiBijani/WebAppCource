@@ -1,0 +1,14 @@
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\bin\Debug\net7.0\FactoryMethod.exe
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\bin\Debug\net7.0\FactoryMethod.deps.json
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\bin\Debug\net7.0\FactoryMethod.runtimeconfig.json
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\bin\Debug\net7.0\FactoryMethod.dll
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\bin\Debug\net7.0\FactoryMethod.pdb
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.AssemblyInfoInputs.cache
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.AssemblyInfo.cs
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.csproj.CoreCompileInputs.cache
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.dll
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\refint\FactoryMethod.dll
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.pdb
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\FactoryMethod.genruntimeconfig.cache
+C:\Users\Mehdi\RiderProjects\DesignPattern\FactoryMethod\obj\Debug\net7.0\ref\FactoryMethod.dll
