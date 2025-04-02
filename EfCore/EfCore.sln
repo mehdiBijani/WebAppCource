@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore", "EfCore\EfCore.csproj", "{D4E0DE27-C34B-46E8-81C5-905EC062E007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore_DataAccess", "EfCore_DataAccess\EfCore_DataAccess.csproj", "{22EF407E-DC01-4937-982D-EECAA4CCF28B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore_Domain", "EfCore_Domain\EfCore_Domain.csproj", "{39D5B792-1E99-496B-9CA1-26B1712124AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4E0DE27-C34B-46E8-81C5-905EC062E007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E0DE27-C34B-46E8-81C5-905EC062E007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E0DE27-C34B-46E8-81C5-905EC062E007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E0DE27-C34B-46E8-81C5-905EC062E007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EF407E-DC01-4937-982D-EECAA4CCF28B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EF407E-DC01-4937-982D-EECAA4CCF28B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EF407E-DC01-4937-982D-EECAA4CCF28B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EF407E-DC01-4937-982D-EECAA4CCF28B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D5B792-1E99-496B-9CA1-26B1712124AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D5B792-1E99-496B-9CA1-26B1712124AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D5B792-1E99-496B-9CA1-26B1712124AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D5B792-1E99-496B-9CA1-26B1712124AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

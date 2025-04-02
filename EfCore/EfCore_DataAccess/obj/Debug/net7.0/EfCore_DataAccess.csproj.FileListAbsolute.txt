@@ -1,0 +1,15 @@
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\bin\Debug\net7.0\EfCore_DataAccess.deps.json
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\bin\Debug\net7.0\EfCore_DataAccess.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\bin\Debug\net7.0\EfCore_DataAccess.pdb
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\bin\Debug\net7.0\EfCore_Domain.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\bin\Debug\net7.0\EfCore_Domain.pdb
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.csproj.AssemblyReference.cache
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.AssemblyInfoInputs.cache
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.AssemblyInfo.cs
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.csproj.CopyComplete
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\refint\EfCore_DataAccess.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\EfCore_DataAccess.pdb
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_DataAccess\obj\Debug\net7.0\ref\EfCore_DataAccess.dll

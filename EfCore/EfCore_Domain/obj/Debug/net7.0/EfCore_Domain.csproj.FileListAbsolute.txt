@@ -1,0 +1,12 @@
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\bin\Debug\net7.0\EfCore_Domain.deps.json
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\bin\Debug\net7.0\EfCore_Domain.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\bin\Debug\net7.0\EfCore_Domain.pdb
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.AssemblyInfoInputs.cache
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.AssemblyInfo.cs
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\refint\EfCore_Domain.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.pdb
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\ref\EfCore_Domain.dll
+C:\Users\Mehdi\RiderProjects\EfCore\EfCore_Domain\obj\Debug\net7.0\EfCore_Domain.csproj.AssemblyReference.cache
