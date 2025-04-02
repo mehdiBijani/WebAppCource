@@ -3,6 +3,7 @@ using EfCore_DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EfCoreDataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250402140624_addTables")]
+    partial class addTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,12 +63,6 @@ namespace EfCoreDataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BookDetail_id_fk")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Category_id_fk")
-                        .HasColumnType("int");
-
                     b.Property<string>("ISBN")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -74,9 +71,6 @@ namespace EfCoreDataAccess.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<int>("Publisher_id_fk")
-                        .HasColumnType("int");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(300)
@@ -84,51 +78,7 @@ namespace EfCoreDataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BookDetail_id_fk")
-                        .IsUnique();
-
-                    b.HasIndex("Category_id_fk");
-
-                    b.HasIndex("Publisher_id_fk");
-
                     b.ToTable("Books");
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.BookAuthor", b =>
-                {
-                    b.Property<int>("Author_id_fk")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Book_id_fk")
-                        .HasColumnType("int");
-
-                    b.HasKey("Author_id_fk", "Book_id_fk");
-
-                    b.HasIndex("Book_id_fk");
-
-                    b.ToTable("BookAuthors");
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.BookDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("NumberOfChapter")
-                        .HasColumnType("int");
-
-                    b.Property<int>("NumberOfPages")
-                        .HasColumnType("int");
-
-                    b.Property<double>("Weight")
-                        .HasColumnType("float");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("BookDetails");
                 });
 
             modelBuilder.Entity("EfCore_Domain.Models.Category", b =>
@@ -186,68 +136,6 @@ namespace EfCoreDataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Publishers");
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.Book", b =>
-                {
-                    b.HasOne("EfCore_Domain.Models.BookDetail", "BookDetail")
-                        .WithOne("Book")
-                        .HasForeignKey("EfCore_Domain.Models.Book", "BookDetail_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EfCore_Domain.Models.Category", "Category")
-                        .WithMany("Books")
-                        .HasForeignKey("Category_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EfCore_Domain.Models.Publisher", "Publisher")
-                        .WithMany("Books")
-                        .HasForeignKey("Publisher_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("BookDetail");
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Publisher");
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.BookAuthor", b =>
-                {
-                    b.HasOne("EfCore_Domain.Models.Author", "Author")
-                        .WithMany()
-                        .HasForeignKey("Author_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EfCore_Domain.Models.Book", "Book")
-                        .WithMany()
-                        .HasForeignKey("Book_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Author");
-
-                    b.Navigation("Book");
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.BookDetail", b =>
-                {
-                    b.Navigation("Book")
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.Category", b =>
-                {
-                    b.Navigation("Books");
-                });
-
-            modelBuilder.Entity("EfCore_Domain.Models.Publisher", b =>
-                {
-                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }
