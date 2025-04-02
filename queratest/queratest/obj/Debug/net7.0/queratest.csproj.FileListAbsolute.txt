@@ -1,0 +1,14 @@
+C:\Users\Mehdi\RiderProjects\queratest\queratest\bin\Debug\net7.0\queratest.exe
+C:\Users\Mehdi\RiderProjects\queratest\queratest\bin\Debug\net7.0\queratest.deps.json
+C:\Users\Mehdi\RiderProjects\queratest\queratest\bin\Debug\net7.0\queratest.runtimeconfig.json
+C:\Users\Mehdi\RiderProjects\queratest\queratest\bin\Debug\net7.0\queratest.dll
+C:\Users\Mehdi\RiderProjects\queratest\queratest\bin\Debug\net7.0\queratest.pdb
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.AssemblyInfoInputs.cache
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.AssemblyInfo.cs
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.csproj.CoreCompileInputs.cache
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.dll
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\refint\queratest.dll
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.pdb
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\queratest.genruntimeconfig.cache
+C:\Users\Mehdi\RiderProjects\queratest\queratest\obj\Debug\net7.0\ref\queratest.dll
