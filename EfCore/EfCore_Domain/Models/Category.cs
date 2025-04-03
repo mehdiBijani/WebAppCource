@@ -6,5 +6,5 @@ public class Category
 
     public string Title { get; set; }
 
-    public List<Book> Books { get; set; }
+    public List<FluentBook> Books { get; set; }
 }
