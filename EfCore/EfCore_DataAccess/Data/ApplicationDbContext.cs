@@ -17,6 +17,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Author> Authors { get; set; }
     public DbSet<BookDetail> BookDetails { get; set; }
     public DbSet<BookAuthor> BookAuthors { get; set; }
+    public DbSet<FluentCategory> FluentCategories { get; set; }
     public DbSet<FluentBook> FluentBooks { get; set; }
     public DbSet<FluentPublisher> FluentPublishers { get; set; }
     public DbSet<FluentAuthor> FluentAuthors { get; set; }
