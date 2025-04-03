@@ -29,6 +29,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Publisher)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookAuthors)
+            </th>
             <th></th>
         </tr>
         </thead>
@@ -51,10 +54,25 @@
                     @Html.DisplayFor(modelItem => item.Publisher.Location)
                 </td>
                 <td>
+                    @{
+                        if (item.BookAuthors?.Any() == true)
+                        {
+                            var baList = new List<string>();
+                            
+                            foreach (var ba in item.BookAuthors)
+                            {
+                                baList.Add(ba.Author.FullName);    
+                            }
+                            
+                            @string.Join(", ", baList);
+                        }
+                    }
+                </td>
+                <td>
                     <a asp-action="Upsert" asp-route-id="@item.Id" class="btn btn-outline-warning">Edit</a>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info">Details</a>
                     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Manage Authors</a>
+                    <a asp-action="ManageAuthors" asp-route-id="@item.Id" class="btn btn-outline-danger">Manage Authors</a>
                 </td>
             </tr>
         }

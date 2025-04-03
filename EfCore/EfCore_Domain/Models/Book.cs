@@ -36,4 +36,7 @@ public class Book
     public int Publisher_id_fk { get; set; }
     
     public Publisher? Publisher { get; set; }
+    
+    public ICollection<BookAuthor>? BookAuthors { get; set; }
+
 }

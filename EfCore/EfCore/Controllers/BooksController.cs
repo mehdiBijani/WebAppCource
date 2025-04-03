@@ -22,12 +22,24 @@ namespace MyEFProject.Controllers
 
         public IActionResult Index()
         {
-            var books = _db.Books.ToList();
-            for (int i = 0; i < books.Count; i++)
-            {
-                books[i].Category = _db.Categories.Find(books[i].Category_id_fk);
-                books[i].Publisher = _db.Publishers.Find(books[i].Publisher_id_fk);
-            }
+            var books = _db.Books
+                .Include(b=>b.Category)
+                .Include(b=>b.Publisher)
+                .Include(b=>b.BookDetail)
+                .Include(b=>b.BookAuthors).ThenInclude(x => x.Author)
+                .ToList();
+            
+            // پیشنهاد نمی شود
+            // foreach (var book in books)
+            // {
+            //     _db.Entry(book).Collection(x=>x.BookAuthors).Load();
+            //
+            //     foreach (var item in book.BookAuthors)
+            //     {
+            //         _db.Entry(item).Reference(x => x.Author).Load();
+            //     }
+            // }
+            
             return View(books);
         }
 
@@ -106,6 +118,52 @@ namespace MyEFProject.Controllers
             _db.Books.Remove(book);
             _db.SaveChanges();
             return RedirectToAction("Index");
+        }
+        
+        public IActionResult ManageAuthors(int id)
+        {
+            BookAuthorVM bookAuthor = new BookAuthorVM()
+            {
+                BookAuthors = _db.BookAuthors.Include(u=>u.Author)
+                    .Include(u=>u.Book)
+                    .Where(b=>b.Book_id_fk==id).ToList(),
+                BookAuthor = new BookAuthor()
+                {
+                    Book_id_fk = id
+                },
+                Book = _db.Books.Find(id)
+
+            };
+            List<int> listOfAuthors = bookAuthor.BookAuthors.Select(u => u.Author_id_fk).ToList();
+            var tempList = _db.Authors.Where(a=> !listOfAuthors.Contains(a.Id)).ToList();
+            bookAuthor.AuthorList = tempList.Select(i => new SelectListItem()
+            {
+                Value = i.Id.ToString(),
+                Text = i.FullName
+            });
+
+            return View(bookAuthor);
+        }
+
+        [HttpPost]
+        public IActionResult ManageAuthors(BookAuthorVM bookAuthorVm)
+        {
+            if (bookAuthorVm.BookAuthor.Book_id_fk != 0 && bookAuthorVm.BookAuthor.Author_id_fk != 0)
+            {
+                _db.BookAuthors.Add(bookAuthorVm.BookAuthor);
+                _db.SaveChanges();
+            }
+
+            return RedirectToAction(nameof(ManageAuthors), new {@id = bookAuthorVm.BookAuthor.Book_id_fk});
+        }
+
+        public IActionResult RemoveAuthor(int authorId, BookAuthorVM bookAuthorVm)
+        {
+            int bookId = bookAuthorVm.Book.Id;
+            var ba = _db.BookAuthors.FirstOrDefault(b => b.Author_id_fk == authorId && b.Book_id_fk == bookId);
+            _db.BookAuthors.Remove(ba);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(ManageAuthors), new {@id = bookId });
         }
     }
 }

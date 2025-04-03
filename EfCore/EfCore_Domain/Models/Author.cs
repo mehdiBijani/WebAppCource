@@ -23,4 +23,6 @@ public class Author
 
     [NotMapped] 
     public string FullName => string.Join(" ", FirstName, LastName);
+    
+    public ICollection<BookAuthor>? BookAuthors { get; set; }
 }
