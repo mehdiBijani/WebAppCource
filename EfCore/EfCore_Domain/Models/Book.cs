@@ -20,20 +20,20 @@ public class Book
     public double Price { get; set; }
 
     [NotMapped]
-    public string PriceRange { get; set; }
+    public string? PriceRange { get; set; }
 
     [ForeignKey("Category")]
     public int Category_id_fk { get; set; }
     
-    public Category Category { get; set; }
+    public Category? Category { get; set; }
 
     [ForeignKey("BookDetail")]
-    public int BookDetail_id_fk { get; set; }
+    public int? BookDetail_id_fk { get; set; }
     
-    public BookDetail BookDetail { get; set; }
+    public BookDetail? BookDetail { get; set; }
     
     [ForeignKey("Publisher")]
     public int Publisher_id_fk { get; set; }
     
-    public Publisher Publisher { get; set; }
+    public Publisher? Publisher { get; set; }
 }

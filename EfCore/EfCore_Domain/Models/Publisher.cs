@@ -14,5 +14,5 @@ public class Publisher
     [MaxLength(300)]
     public string Location { get; set; }
     
-    public ICollection<Book> Books { get; set; }
+    public ICollection<Book>? Books { get; set; }
 }

@@ -61,7 +61,7 @@ namespace EfCoreDataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("BookDetail_id_fk")
+                    b.Property<int?>("BookDetail_id_fk")
                         .HasColumnType("int");
 
                     b.Property<int>("Category_id_fk")
@@ -86,7 +86,8 @@ namespace EfCoreDataAccess.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BookDetail_id_fk")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[BookDetail_id_fk] IS NOT NULL");
 
                     b.HasIndex("Category_id_fk");
 
@@ -349,9 +350,7 @@ namespace EfCoreDataAccess.Migrations
                 {
                     b.HasOne("EfCore_Domain.Models.BookDetail", "BookDetail")
                         .WithOne("Book")
-                        .HasForeignKey("EfCore_Domain.Models.Book", "BookDetail_id_fk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("EfCore_Domain.Models.Book", "BookDetail_id_fk");
 
                     b.HasOne("EfCore_Domain.Models.Category", "Category")
                         .WithMany("Books")
