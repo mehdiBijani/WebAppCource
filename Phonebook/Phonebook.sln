@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.API", "Phonebook.API\Phonebook.API.csproj", "{5FC21CD5-B253-47D2-87B6-ABF6E2CD0AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Application", "Phonebook.Application\Phonebook.Application.csproj", "{3F4BAA38-BAE7-4A0A-879E-13E8E2720598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Domain", "Phonebook.Domain\Phonebook.Domain.csproj", "{D075D94B-7845-443B-9F2C-9A7CBB91D6F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phonebook.Infrastructure", "Phonebook.Infrastructure\Phonebook.Infrastructure.csproj", "{4CEB9186-D61D-409A-B254-AB06765C10EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FC21CD5-B253-47D2-87B6-ABF6E2CD0AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC21CD5-B253-47D2-87B6-ABF6E2CD0AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC21CD5-B253-47D2-87B6-ABF6E2CD0AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC21CD5-B253-47D2-87B6-ABF6E2CD0AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F4BAA38-BAE7-4A0A-879E-13E8E2720598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4BAA38-BAE7-4A0A-879E-13E8E2720598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4BAA38-BAE7-4A0A-879E-13E8E2720598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4BAA38-BAE7-4A0A-879E-13E8E2720598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D075D94B-7845-443B-9F2C-9A7CBB91D6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D075D94B-7845-443B-9F2C-9A7CBB91D6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D075D94B-7845-443B-9F2C-9A7CBB91D6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D075D94B-7845-443B-9F2C-9A7CBB91D6F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEB9186-D61D-409A-B254-AB06765C10EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEB9186-D61D-409A-B254-AB06765C10EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEB9186-D61D-409A-B254-AB06765C10EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEB9186-D61D-409A-B254-AB06765C10EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

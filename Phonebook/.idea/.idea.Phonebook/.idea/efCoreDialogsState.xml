@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EfCoreDialogsState">
+    <option name="keyValueStorage">
+      <map>
+        <entry key="Common:4ceb9186-d61d-409a-b254-ab06765c10ee:dbContext" value="Phonebook.Infrastructure.Persistence.PhonebookDbContext" />
+        <entry key="Common:buildConfiguration" value="Debug" />
+        <entry key="Common:noBuild" value="false" />
+      </map>
+    </option>
+  </component>
+</project>
