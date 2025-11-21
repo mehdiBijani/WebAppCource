@@ -1,0 +1,23 @@
+@model ImageAdd.Models.ImageViewModel
+
+@using (Html.BeginForm("Create", "Image", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <p>Title: @Html.TextBoxFor(m => m.Title)</p>
+    <p>
+        <img id="previewImage" src="#" style="display:none; width:150px;" />
+    </p>
+    <p>File: <input type="file" name="File" id="imageInput"/></p>
+    <input type="submit" value="Add" />
+}
+@section Scripts {
+    <script>
+        document.getElementById("imageInput").addEventListener("change", function (event) {
+            const [file] = event.target.files;
+            if (file) {
+                const preview = document.getElementById("previewImage");
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+            }
+        });
+    </script>
+}

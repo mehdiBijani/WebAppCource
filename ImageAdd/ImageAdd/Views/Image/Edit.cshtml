@@ -1,0 +1,22 @@
+@model ImageAdd.Models.ImageViewModel
+
+@using (Html.BeginForm("Edit", "Image", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.HiddenFor(m => m.Id)
+    <p>Title: @Html.TextBoxFor(m => m.Title)</p>
+    <p>Current Image:<br /><img id="previewImage" src="@Model.FilePath" width="100" /></p>
+    <p>New File: <input type="file" name="File"  id="imageInput"/></p>
+    <input type="submit" value="Edit" />
+}
+
+@section Scripts {
+    <script>
+        document.getElementById("imageInput").addEventListener("change", function (event) {
+            const [file] = event.target.files;
+            if (file) {
+                const preview = document.getElementById("previewImage");
+                preview.src = URL.createObjectURL(file);
+            }
+        });
+    </script>
+}

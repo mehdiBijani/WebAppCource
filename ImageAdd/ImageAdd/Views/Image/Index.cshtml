@@ -1,0 +1,25 @@
+@model List<ImageAdd.Models.ImageViewModel>
+
+<h2>Images</h2>
+
+<p>
+    @Html.ActionLink("Add New Image", "Create")
+</p>
+
+<table border="1">
+    <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Operation</th>
+    </tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td><img src="@item.FilePath" width="100" /></td>
+        <td>@item.Title</td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+        </td>
+    </tr>
+}
+</table>
