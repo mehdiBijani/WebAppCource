@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mAQTP1aSSzU=",
+  "dgSpecHash": "hH4DNyj9y2g=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mehdi\\RiderProjects\\Phonebook\\Phonebook.Application\\Phonebook.Application.csproj",
   "expectedPackageFiles": [
@@ -76,8 +76,10 @@
     {
       "code": "NU1608",
       "level": "Warning",
-      "warningLevel": 1,
       "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.5.0 was resolved.",
+      "projectPath": "C:\\Users\\Mehdi\\RiderProjects\\Phonebook\\Phonebook.Application\\Phonebook.Application.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Mehdi\\RiderProjects\\Phonebook\\Phonebook.Application\\Phonebook.Application.csproj",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net7.0"
